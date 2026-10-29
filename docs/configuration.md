@@ -1,6 +1,6 @@
 # Configuration
 
-Configurations are validated YAML files. Start from [`radio.yaml`](../examples/radio.yaml) or [`radio_rrc.yaml`](../examples/radio_rrc.yaml).
+Configurations are validated YAML files. Start from [`radio.yaml`](https://github.com/kit-cel/mobile-network-sim/blob/main/examples/radio.yaml) or [`radio_rrc.yaml`](https://github.com/kit-cel/mobile-network-sim/blob/main/examples/radio_rrc.yaml).
 
 | Field | Meaning |
 | --- | --- |

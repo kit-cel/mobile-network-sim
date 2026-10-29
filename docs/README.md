@@ -8,4 +8,4 @@
 - [RRC model](rrc.md): handover, radio-link monitoring, and model limits.
 - [Python API](api.md): supported imports and main methods.
 
-Runnable configurations are in [`examples/`](../examples/).
+Runnable configurations are in the [examples](https://github.com/kit-cel/mobile-network-sim/tree/main/examples).

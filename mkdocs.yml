@@ -1,0 +1,9 @@
+site_name: Mobile Network Simulator
+repo_url: https://github.com/kit-cel/mobile-network-sim
+nav:
+  - Overview: README.md
+  - Usage: usage.md
+  - Configuration: configuration.md
+  - Model scope: model-scope.md
+  - RRC model: rrc.md
+  - Python API: api.md

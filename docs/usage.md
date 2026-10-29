@@ -31,6 +31,6 @@ finally:
     runner.close()
 ```
 
-For radio-only episodes, use `SimulationConfig.from_yaml(...)` and `RadioSimulationRunner(config).run(...)`. To drive RRC from existing measurements without a radio simulation, see [`examples/rrc_from_measurements.py`](../examples/rrc_from_measurements.py).
+For radio-only episodes, use `SimulationConfig.from_yaml(...)` and `RadioSimulationRunner(config).run(...)`. To drive RRC from existing measurements without a radio simulation, see [`examples/rrc_from_measurements.py`](https://github.com/kit-cel/mobile-network-sim/blob/main/examples/rrc_from_measurements.py).
 
 Generated radio fields are cached under `XDG_CACHE_HOME/mobile-network-sim` when `XDG_CACHE_HOME` is set, otherwise under `LOCALAPPDATA/mobile-network-sim` on Windows or `~/.cache/mobile-network-sim` elsewhere.

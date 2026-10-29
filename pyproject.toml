@@ -25,6 +25,7 @@ dependencies = [
 [project.optional-dependencies]
 plot = ["plotly>=6.9"]
 gui = ["plotly>=6.9", "PyQt5>=5.15", "pyqtgraph>=0.14"]
+docs = ["mkdocs>=1.6,<2"]
 test = ["pytest>=9.1", "pytest-cov>=6"]
 
 [project.scripts]

@@ -8,4 +8,5 @@ dist/
 htmlcov/
 .cache/
 results/
+site/
 .test-*/
