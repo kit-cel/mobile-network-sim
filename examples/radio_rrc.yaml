@@ -1,0 +1,79 @@
+seed: 0
+time_resolution_ms: 40
+num_steps: 20
+dtypes:
+  storage: float32
+  internal: float64
+  maps: float32
+radio:
+  num_ues: 2
+  geometry:
+    mobility_wraparound: true
+    network_wraparound: true
+    layout:
+      layout: HexagonalMacroLayout
+      isd_m: 200.0
+      n_tiers: 1
+      rotation_offset_deg: 0.0
+    region:
+      roi: MultiHexagonROI
+  channel:
+    channel_model: UrbanMacro
+    los_model: ConstLOS
+    shadowing_enabled: false
+    wraparound_coupling_method: nearest_image
+    create_lsf_maps: false
+    lsf_maps_grid_res_m: 20.0
+  network:
+    macro_bs:
+      p_tx_dbm: 44.0
+      rx_noise_figure_db: 5.0
+      height_m: 25.0
+      n_sectors: 3
+      ant:
+        ant_name: PanelArrayAnt
+        g_max_dbi: 8.0
+        n_panel_h: 1
+        m_panel_v: 1
+        n_element_h: 1
+        m_element_v: 1
+        n_pol: 1
+    micro_bs: []
+    rat:
+      fc_ghz: 4.0
+      bw_mhz: 20.0
+      rsrp_clipping_enabled: true
+      rsrp_dbm_min: -130.0
+      rsrp_dbm_max: -30.0
+  ues:
+    height_m: 1.5
+    mobility_model: ConstSpeedCorrRandomWalk
+    speed_kph: 30.0
+    max_turn_angle_deg: 1.0
+    power_class_dbm: 23.0
+    rx_noise_figure_db: 7.0
+rrc:
+  t_res_ms: 40
+  phy_update_interval_ms: 40
+  msr_interval_ms: 40
+  log_interval_ms: null
+  n310: 10
+  n311: 10
+  t310_ms: 1000
+  q_in_db: -6.0
+  q_out_db: -8.0
+  l1_filter_sample_interval_ms: 40
+  l1_q_in_filter_len_ms: 120
+  l1_q_out_filter_len_ms: 200
+  l3_filter_coef: 1
+  l3_filter_sample_reference_interval_ms: 200
+  ho_event_config:
+    a3:
+      ttt_ms: 160
+      hys: 0.0
+      offset: 3.0
+  enable_ttt_abort: false
+  t_ho_prep_ms_simulated: 40
+  t_ho_exec_ms_simulated: 40
+  t_rlfr_ms_simulated: 1000
+  t_mts_ms: 1000

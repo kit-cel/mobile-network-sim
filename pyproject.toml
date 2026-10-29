@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mobile-network-sim"
+version = "0.2.0"
+description = "Step-based simulator for mobile radio networks and RRC handover."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+authors = [{ name = "Johannes Voigt", email = "johannes.voigt@kit.edu" }]
+dependencies = [
+    "h5py>=3.16",
+    "matplotlib>=3.11",
+    "numpy>=2.5",
+    "pointpats>=2.6",
+    "pydantic>=2.13",
+    "PyYAML>=6.0",
+    "scipy>=1.18",
+    "shapely>=2.1",
+    "tqdm>=4.70",
+]
+
+[project.optional-dependencies]
+plot = ["plotly>=6.9"]
+gui = ["plotly>=6.9", "PyQt5>=5.15", "pyqtgraph>=0.14"]
+test = ["pytest>=9.1", "pytest-cov>=6"]
+
+[project.scripts]
+mobile-network-sim = "mobile_network_sim.cli:main"
+
+[project.urls]
+Repository = "https://github.com/kit-cel/mobile-network-sim"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["mobile_network_sim*"]
+
+[tool.setuptools.package-data]
+mobile_network_sim = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
